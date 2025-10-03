@@ -95,7 +95,7 @@ PORT=8080
 
 TWILIO_ACCOUNT_SID=your_twilio_account_sid
 TWILIO_AUTH_TOKEN=your_twilio_auth_token
-TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886 # Twilio sandbox number
+TWILIO_WHATSAPP_NUMBER=whatsapp: Twilio sandbox number
 
 Start the backend:
 
@@ -115,18 +115,6 @@ cd frontend
 # Install dependencies
 
 npm install
-
-# Copy environment variables
-
-# Windows
-
-copy .env.local.example .env.local
-
-# macOS/Linux
-
-cp .env.local.example .env.local
-
-frontend/.env.local (default is ready for local dev):
 
 VITE_API_URL=http://localhost:8080
 
@@ -148,17 +136,14 @@ Open the frontend in your browser and log in with your phone number. OTPs will b
 📂 Project Structure
 project-root/
 │
-├── backend/ # Node.js + Express API
+├── backend/ # Node.js + Express.Js
 │ ├── models/ # Mongoose models
-│ ├── routes/ # Express routes
-│ ├── utils/ # Helper functions (OTP, Twilio, etc.)
 │ └── index.js # App entry point
 │
 ├── frontend/ # React + Vite client
 │ ├── src/
 │ │ ├── components/ # Reusable UI components
 │ │ ├── pages/ # App pages (Login, Register, Home)
-│ │ ├── hooks/ # Custom React hooks
 │ │ └── App.jsx
 │ └── index.html
 │
